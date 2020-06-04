@@ -1,6 +1,6 @@
 # strapi-gatsby-cms-starter
 
-This Demo Project is bootstaped with [Strapi - Gatsby CMS Starter](https://github.com/strapi/strapi-starter-gatsby-blog)
+This Demo Project is bootstrapped with [Strapi - Gatsby CMS Starter](https://github.com/strapi/strapi-starter-gatsby-blog)
 
 ## Getting started
 
