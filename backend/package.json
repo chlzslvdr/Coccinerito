@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -23,9 +23,6 @@
     "strapi-plugin-upload": "3.0.1",
     "strapi-plugin-users-permissions": "3.0.1",
     "strapi-utils": "3.0.1"
-  },
-  "author": {
-    "name": "A Strapi developer"
   },
   "strapi": {
     "uuid": "2e86e435-6156-4dc3-b8bd-7ece0c684b7c"
