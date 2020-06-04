@@ -1,1 +1,1 @@
-# Coccinerito
+# strapi-gatsby-cms-starter
