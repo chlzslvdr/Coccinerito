@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.DEPLOY_URL ? process.env.PROD_API_URL :  process.env.DEV_API_URL,
+        apiURL: process.env.API_URL,
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           "article",
