@@ -22,7 +22,8 @@
     "strapi-plugin-graphql": "3.0.1",
     "strapi-plugin-upload": "3.0.1",
     "strapi-plugin-users-permissions": "3.0.1",
-    "strapi-utils": "3.0.1"
+    "strapi-utils": "3.0.1",
+    "pg": "8.2.1"
   },
   "strapi": {
     "uuid": "2e86e435-6156-4dc3-b8bd-7ece0c684b7c"
