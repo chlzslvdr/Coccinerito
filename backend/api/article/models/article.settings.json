@@ -11,8 +11,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "content": {
       "type": "richtext",
@@ -30,7 +29,8 @@
       "required": true
     },
     "published_at": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "category": {
       "model": "category",
