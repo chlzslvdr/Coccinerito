@@ -1,20 +1,31 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Nav from "./nav"
-import Seo from "./seo"
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import Header from './header';
+import Seo from './seo';
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Seo />
-      <Nav />
-      <main>{children}</main>
-    </>
-  )
-}
+const GlobalStyle = createGlobalStyle`
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: black;
+  }
+`;
+
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyle/>
+    <Seo />
+    <Header />
+    <main>{children}</main>
+  </>
+);
 
 export default Layout;
