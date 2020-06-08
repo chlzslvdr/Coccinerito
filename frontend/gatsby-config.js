@@ -4,11 +4,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "My super blog",
-    description: "Gatsby blog with Strapi",
-    author: "Strapi team",
+    title: "Strapi Gatsby CMS DEMO",
+    description: "Playground",
+    author: "chlzslvdr",
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
