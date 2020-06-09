@@ -43,27 +43,25 @@ module.exports = {
         display: 'minimal-ui',
       },
     },
-    "gatsby-plugin-offline",
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@src": "src",
-          "@components": "src/components",
-          "@pages": "src/pages",
-          "@scss": "src/scss",
-          "@templates": "src/templates",
+          '@src': 'src',
+          '@components': 'src/components',
+          '@pages': 'src/pages',
+          '@scss': 'src/scss',
+          '@templates': 'src/templates',
         },
-        extensions: [
-          "js",
-        ],
-      }
+        extensions: ['js'],
+      },
     },
     {
       resolve: 'gatsby-plugin-antd',
       options: {
-        style: true
-      }
-  }
+        style: true,
+      },
+    },
   ],
 };

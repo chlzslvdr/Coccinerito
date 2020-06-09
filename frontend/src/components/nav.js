@@ -17,24 +17,26 @@ const Nav = () => (
           <ul className="uk-navbar-nav">
             <StaticQuery
               query={graphql`
-                    query {
-                    allStrapiCategory {
-                        edges {
-                        node {
-                            strapiId
-                            name
-                        }
-                        }
+                query {
+                  allStrapiCategory {
+                    edges {
+                      node {
+                        strapiId
+                        name
+                      }
                     }
-                    }
-                `}
-              render={(data) => data.allStrapiCategory.edges.map((category, i) => (
-                <li key={category.node.strapiId}>
-                  <Link to={`/category/${category.node.strapiId}`}>
-                    {category.node.name}
-                  </Link>
-                </li>
-              ))}
+                  }
+                }
+              `}
+              render={(data) =>
+                data.allStrapiCategory.edges.map((category, i) => (
+                  <li key={category.node.strapiId}>
+                    <Link to={`/category/${category.node.strapiId}`}>
+                      {category.node.name}
+                    </Link>
+                  </li>
+                ))
+              }
             />
           </ul>
         </div>

@@ -5,26 +5,26 @@ import ArticlesComponent from '../components/articles';
 import Layout from '../components/layout';
 
 export const query = graphql`
-    query Category($id: Int!) {
-        articles: allStrapiArticle(filter: { category: { id: { eq: $id } } }) {
-        edges {
-            node {
-            strapiId
-            title
-            category {
-                name
-            }
-            image {
-                publicURL
-            }
-            }
+  query Category($id: Int!) {
+    articles: allStrapiArticle(filter: { category: { id: { eq: $id } } }) {
+      edges {
+        node {
+          strapiId
+          title
+          category {
+            name
+          }
+          image {
+            publicURL
+          }
         }
-        }
-        category: strapiCategory(strapiId: { eq: $id }) {
-        name
-        }
+      }
     }
-    `;
+    category: strapiCategory(strapiId: { eq: $id }) {
+      name
+    }
+  }
+`;
 
 const Category = ({ data }) => {
   const articles = data.articles.edges;
