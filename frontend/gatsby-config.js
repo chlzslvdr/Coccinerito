@@ -44,5 +44,20 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@pages": "src/pages",
+          "@sass": "src/sass",
+          "@templates": "src/templates",
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    }
   ],
 }
