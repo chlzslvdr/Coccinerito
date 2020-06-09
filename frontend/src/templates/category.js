@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import ArticlesComponent from "../components/articles"
-import Layout from "../components/layout"
+import ArticlesComponent from '../components/articles';
+import Layout from '../components/layout';
 
 export const query = graphql`
     query Category($id: Int!) {
@@ -24,22 +24,22 @@ export const query = graphql`
         name
         }
     }
-    `
+    `;
 
-    const Category = ({ data }) => {
-    const articles = data.articles.edges
-    const category = data.category.name
+const Category = ({ data }) => {
+  const articles = data.articles.edges;
+  const category = data.category.name;
 
-    return (
-        <Layout>
-        <div className="uk-section">
-            <div className="uk-container uk-container-large">
-            <h1>{category}</h1>
-            <ArticlesComponent articles={articles} />
-            </div>
+  return (
+    <Layout>
+      <div className="uk-section">
+        <div className="uk-container uk-container-large">
+          <h1>{category}</h1>
+          <ArticlesComponent articles={articles} />
         </div>
-        </Layout>
-    )
-}
+      </div>
+    </Layout>
+  );
+};
 
 export default Category;

@@ -16,10 +16,10 @@ export const query = graphql`
         }
         }
     }
-    `
+    `;
 
-    const Article = ({ data }) => {
-    const article = data.strapiArticle
+const Article = ({ data }) => {
+    const article = data.strapiArticle;
     return (
         <Layout>
         <div>
@@ -43,7 +43,7 @@ export const query = graphql`
             </div>
         </div>
         </Layout>
-    )
-}
+    );
+};
 
 export default Article;

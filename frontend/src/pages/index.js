@@ -1,8 +1,8 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import ArticlesComponent from "../components/articles"
-import "../scss/main.scss"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Layout from "@components/layout";
+import ArticlesComponent from "@components/articles";
+import "@scss/main.scss";
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +25,7 @@ const IndexPage = () => (
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <div className="uk-section">
           <div className="uk-container uk-container-large">
             <h1>Strapi blog</h1>
@@ -35,6 +35,6 @@ const IndexPage = () => (
       )}
     />
   </Layout>
-)
+);
 
 export default IndexPage;
