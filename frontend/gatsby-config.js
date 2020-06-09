@@ -58,6 +58,12 @@ module.exports = {
           "js",
         ],
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+  }
   ],
 };
