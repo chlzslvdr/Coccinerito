@@ -18,7 +18,7 @@ npm install
 npm run develop
 ```
 
-Gatsby server is running here => http://localhost:8000
+Strapi server is running here => http://localhost:1337
 
 ### Start the frontend server
 
@@ -34,4 +34,4 @@ npm install
 npm run develop
 ```
 
-Strapi server is running here => http://localhost:1337
+Gatsby server is running here => http://localhost:8000
